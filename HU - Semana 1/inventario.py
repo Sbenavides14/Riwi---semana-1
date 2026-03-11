@@ -1,5 +1,5 @@
 
-#In this entry, we ask the user to enter the name of the article.
+
 article = str(input("Enter the article name: "))
 
 def price_required():
@@ -26,12 +26,13 @@ def required_quantity():
         return required_quantity()
     return amount
 
-
-
 price = price_required()
 amount = required_quantity()
 
-#In this step, the algorithm prints on the screen the name, price, and quantity of the entered item.
-print(f"Article title: {article}")
-print(f"price of the item: {price}")
-print(f"existence of the article: {amount}" )
+total_cost = (price * amount)
+
+
+print(f"Product name: {article}")
+print(f"Product price: {price}")
+print(f"Product quantity: {amount}")
+print(f"Total calculated cost: {total_cost}")
